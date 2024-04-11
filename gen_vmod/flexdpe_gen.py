@@ -25,8 +25,8 @@ print "\to_data_valid, // valid data signals"
 print "\to_data_bus // output data bus"
 print ");\n"
 
-print "\tparameter IN_DATA_TYPE = 16; // input data type width (BFP16)"
-print "\tparameter OUT_DATA_TYPE = 32; // output data type width (FP32)"
+print "\tparameter IN_DATA_TYPE = " + str(IN_DATA_TYPE) + "; // input data type width (BFP16)"
+print "\tparameter OUT_DATA_TYPE = " + str(OUT_DATA_TYPE) + "; // output data type width (FP32)"
 print "\tparameter NUM_PES = " + str(NUM_PES) + "; // number of PES"
 print "\tparameter LOG2_PES = " + str(LOG2_PES) + ";\n"
 

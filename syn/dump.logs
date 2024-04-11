@@ -1,0 +1,728 @@
+
+                           Design Compiler Graphical 
+                                 DC Ultra (TM)
+                                  DFTMAX (TM)
+                              Power Compiler (TM)
+                                 DesignWare (R)
+                                 DC Expert (TM)
+                               Design Vision (TM)
+                               HDL Compiler (TM)
+                               VHDL Compiler (TM)
+                                  DFT Compiler
+                               Design Compiler(R)
+
+                 Version V-2023.12 for linux64 - Nov 27, 2023 
+
+                    Copyright (c) 1988 - 2023 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+Initializing...
+Current time:       Thu Apr 11 10:57:10 2024
+Hostname:           manager01
+CPU Model:          Intel(R) Xeon(R) Silver 4314 CPU @ 2.40GHz
+CPU Details:        Cores = 32 : Sockets = 2 : Cache Size = 24576 KB : Freq = 3.40 GHz
+OS:                 Linux 3.10.0-1160.el7.x86_64
+RAM:                251 GB (Free   5 GB)
+Swap:                 9 GB (Free   0 GB)
+Work Filesystem:    /hpc mounted to beegfs_nodev
+Tmp Filesystem:     / mounted to /dev/mapper/rhel-root
+Work Disk:          1180761 GB (Free 1062549 GB)
+Tmp Disk:           1775 GB (Free 402 GB)
+
+CPU Load: 17%, Ram Free: 5 GB, Swap Free: 0 GB, Work Disk Free: 1062549 GB, Tmp Disk Free: 402 GB
+dc_shell> dc_shell> /hpc/home/connect.wzhong679/code/Tools/freepdk-45nm/stdcells.db
+dc_shell> /hpc/home/connect.wzhong679/code/Tools/freepdk-45nm/stdcells.db
+dc_shell> dc_shell> dc_shell> 1
+dc_shell> dc_shell> dc_shell> == READ_FILE autoread for top design 'flexdpe' ==
+
+Starting READ_FILE autoread mode...
+Information: Adding '/hpc/home/connect.wzhong679/code/Simulator_sample/SIGMA/vmod/flexdpe.v'.  (AUTOREAD-100)
+Information: Adding '/hpc/home/connect.wzhong679/code/Simulator_sample/SIGMA/vmod/xbar.v'.  (AUTOREAD-100)
+Information: Adding '/hpc/home/connect.wzhong679/code/Simulator_sample/SIGMA/vmod/benes.v'.  (AUTOREAD-100)
+Information: Adding '/hpc/home/connect.wzhong679/code/Simulator_sample/SIGMA/vmod/mult_gen.v'.  (AUTOREAD-100)
+Information: Adding '/hpc/home/connect.wzhong679/code/Simulator_sample/SIGMA/vmod/mult_switch.v'.  (AUTOREAD-100)
+Information: Adding '/hpc/home/connect.wzhong679/code/Simulator_sample/SIGMA/vmod/adder_switch.v'.  (AUTOREAD-100)
+Information: Adding '/hpc/home/connect.wzhong679/code/Simulator_sample/SIGMA/vmod/edge_adder_switch.v'.  (AUTOREAD-100)
+Information: Adding '/hpc/home/connect.wzhong679/code/Simulator_sample/SIGMA/vmod/reduction_mux.v'.  (AUTOREAD-100)
+Information: Adding '/hpc/home/connect.wzhong679/code/Simulator_sample/SIGMA/vmod/fan_network.v'.  (AUTOREAD-100)
+Information: Adding '/hpc/home/connect.wzhong679/code/Simulator_sample/SIGMA/vmod/fan_ctrl.v'.  (AUTOREAD-100)
+Information: Scanning file { flexdpe.v }. (AUTOREAD-303)
+Information: Scanning file { xbar.v }. (AUTOREAD-303)
+Information: Scanning file { benes.v }. (AUTOREAD-303)
+Information: Scanning file { mult_gen.v }. (AUTOREAD-303)
+Information: Scanning file { mult_switch.v }. (AUTOREAD-303)
+Information: Scanning file { adder_switch.v }. (AUTOREAD-303)
+Information: Scanning file { edge_adder_switch.v }. (AUTOREAD-303)
+Information: Scanning file { reduction_mux.v }. (AUTOREAD-303)
+Information: Scanning file { fan_network.v }. (AUTOREAD-303)
+Information: Scanning file { fan_ctrl.v }. (AUTOREAD-303)
+Compiling source file /hpc/home/connect.wzhong679/code/Simulator_sample/SIGMA/vmod/fan_ctrl.v
+Warning:  /hpc/home/connect.wzhong679/code/Simulator_sample/SIGMA/vmod/fan_ctrl.v:602: A unnamed generate block with an LRM-defined name 'genblk6' is detected, which is incompatible with Verilog standard 2001 or 1995. (VER-944)
+Presto compilation completed successfully.
+Compiling source file /hpc/home/connect.wzhong679/code/Simulator_sample/SIGMA/vmod/xbar.v
+Presto compilation completed successfully.
+Compiling source file /hpc/home/connect.wzhong679/code/Simulator_sample/SIGMA/vmod/mult_switch.v
+Presto compilation completed successfully.
+Compiling source file /hpc/home/connect.wzhong679/code/Simulator_sample/SIGMA/vmod/mult_gen.v
+Presto compilation completed successfully.
+Compiling source file /hpc/home/connect.wzhong679/code/Simulator_sample/SIGMA/vmod/reduction_mux.v
+Warning:  /hpc/home/connect.wzhong679/code/Simulator_sample/SIGMA/vmod/reduction_mux.v:21: Parameter keyword used in local parameter declaration. (VER-329)
+Presto compilation completed successfully.
+Compiling source file /hpc/home/connect.wzhong679/code/Simulator_sample/SIGMA/vmod/edge_adder_switch.v
+Warning:  /hpc/home/connect.wzhong679/code/Simulator_sample/SIGMA/vmod/edge_adder_switch.v:33: Parameter keyword used in local parameter declaration. (VER-329)
+Presto compilation completed successfully.
+Compiling source file /hpc/home/connect.wzhong679/code/Simulator_sample/SIGMA/vmod/adder_switch.v
+Warning:  /hpc/home/connect.wzhong679/code/Simulator_sample/SIGMA/vmod/adder_switch.v:32: Parameter keyword used in local parameter declaration. (VER-329)
+Presto compilation completed successfully.
+Compiling source file /hpc/home/connect.wzhong679/code/Simulator_sample/SIGMA/vmod/fan_network.v
+Warning:  /hpc/home/connect.wzhong679/code/Simulator_sample/SIGMA/vmod/fan_network.v:534: A unnamed generate block with an LRM-defined name 'genblk1' is detected, which is incompatible with Verilog standard 2001 or 1995. (VER-944)
+Presto compilation completed successfully.
+Compiling source file /hpc/home/connect.wzhong679/code/Simulator_sample/SIGMA/vmod/flexdpe.v
+Presto compilation completed successfully.
+Elaborating top design flexdpe
+Loading db file '/hpc/home/connect.wzhong679/code/Tools/freepdk-45nm/stdcells.db'
+Loading db file '/hpc/Edatools/synopsys/design_compiler/V-2023.12/libraries/syn/gtech.db'
+Loading db file '/hpc/Edatools/synopsys/design_compiler/V-2023.12/libraries/syn/standard.sldb'
+  Loading link library 'NangateOpenCellLibrary'
+  Loading link library 'gtech'
+Running PRESTO HDLC
+Warning:  /hpc/home/connect.wzhong679/code/Simulator_sample/SIGMA/vmod/flexdpe.v:103: Net r_mult connected to instance my_mult_gen is declared as reg data type but is not driven by an always block. (VER-1004)
+Warning:  /hpc/home/connect.wzhong679/code/Simulator_sample/SIGMA/vmod/flexdpe.v:118: Net r_mult connected to instance my_fan_network is declared as reg data type but is not driven by an always block. (VER-1004)
+
+Inferred memory devices in process
+	in routine flexdpe line 56 in file
+		'/hpc/home/connect.wzhong679/code/Simulator_sample/SIGMA/vmod/flexdpe.v'.
+================================================================================
+|    Register Name     |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+================================================================================
+|  r_dest_bus_ff_reg   | Flip-flop |  64   |  Y  | N  | N  | N  | N  | N  | N  |
+| r_stationary_ff_reg  | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+| r_data_valid_ff_reg  | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|  r_data_bus_ff_reg   | Flip-flop |  128  |  Y  | N  | N  | N  | N  | N  | N  |
+|  r_data_bus_ff2_reg  | Flip-flop |  128  |  Y  | N  | N  | N  | N  | N  | N  |
+| r_data_valid_ff2_reg | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+| r_stationary_ff2_reg | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|  r_dest_bus_ff2_reg  | Flip-flop |  64   |  Y  | N  | N  | N  | N  | N  | N  |
+================================================================================
+Presto compilation completed successfully. (flexdpe)
+Elaborated 1 design.
+Current design is now 'flexdpe'.
+Information: Building the design 'fan_ctrl' instantiated from design 'flexdpe' with
+	the parameters "DATA_TYPE=8,NUM_PES=16,LOG2_PES=4". (HDL-193)
+
+Inferred memory devices in process
+	in routine fan_ctrl_DATA_TYPE8_NUM_PES16_LOG2_PES4 line 68 in file
+		'/hpc/home/connect.wzhong679/code/Simulator_sample/SIGMA/vmod/fan_ctrl.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      r_vn_reg       | Flip-flop |  64   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine fan_ctrl_DATA_TYPE8_NUM_PES16_LOG2_PES4 line 76 in file
+		'/hpc/home/connect.wzhong679/code/Simulator_sample/SIGMA/vmod/fan_ctrl.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      r_vn_reg       | Flip-flop |  64   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine fan_ctrl_DATA_TYPE8_NUM_PES16_LOG2_PES4 line 540 in file
+		'/hpc/home/connect.wzhong679/code/Simulator_sample/SIGMA/vmod/fan_ctrl.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   r_sel_lvl_2_reg   | Flip-flop |  12   |  Y  | N  | N  | N  | N  | N  | N  |
+|   r_cmd_lvl_3_reg   | Flip-flop |  12   |  Y  | N  | N  | N  | N  | N  | N  |
+|   r_cmd_lvl_2_reg   | Flip-flop |  18   |  Y  | N  | N  | N  | N  | N  | N  |
+|   r_cmd_lvl_1_reg   | Flip-flop |  24   |  Y  | N  | N  | N  | N  | N  | N  |
+|   r_add_lvl_3_reg   | Flip-flop |   4   |  Y  | N  | N  | N  | N  | N  | N  |
+|   r_sel_lvl_3_reg   | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|   r_cmd_lvl_0_reg   | Flip-flop |  24   |  Y  | N  | N  | N  | N  | N  | N  |
+|   r_add_lvl_0_reg   | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+|   r_add_lvl_2_reg   | Flip-flop |   6   |  Y  | N  | N  | N  | N  | N  | N  |
+|   r_add_lvl_1_reg   | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine fan_ctrl_DATA_TYPE8_NUM_PES16_LOG2_PES4 line 593 in file
+		'/hpc/home/connect.wzhong679/code/Simulator_sample/SIGMA/vmod/fan_ctrl.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     r_valid_reg     | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine fan_ctrl_DATA_TYPE8_NUM_PES16_LOG2_PES4 line 603 in file
+		'/hpc/home/connect.wzhong679/code/Simulator_sample/SIGMA/vmod/fan_ctrl.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     r_valid_reg     | Flip-flop |   3   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine fan_ctrl_DATA_TYPE8_NUM_PES16_LOG2_PES4 line 622 in file
+		'/hpc/home/connect.wzhong679/code/Simulator_sample/SIGMA/vmod/fan_ctrl.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+| o_reduction_cmd_reg | Flip-flop |  45   |  Y  | N  | N  | N  | N  | N  | N  |
+| o_reduction_sel_reg | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+| o_reduction_add_reg | Flip-flop |  15   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (fan_ctrl_DATA_TYPE8_NUM_PES16_LOG2_PES4)
+Information: Building the design 'xbar' instantiated from design 'flexdpe' with
+	the parameters "DATA_TYPE=8,NUM_PES=16,INPUT_BW=16,LOG2_PES=4". (HDL-193)
+
+Inferred memory devices in process
+	in routine xbar_DATA_TYPE8_NUM_PES16_INPUT_BW16_LOG2_PES4 line 47 in file
+		'/hpc/home/connect.wzhong679/code/Simulator_sample/SIGMA/vmod/xbar.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   o_dist_bus_reg    | Flip-flop |  128  |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (xbar_DATA_TYPE8_NUM_PES16_INPUT_BW16_LOG2_PES4)
+Information: Building the design 'mult_gen' instantiated from design 'flexdpe' with
+	the parameters "IN_DATA_TYPE=8,OUT_DATA_TYPE=24,NUM_PES=16". (HDL-193)
+Warning:  /hpc/home/connect.wzhong679/code/Simulator_sample/SIGMA/vmod/mult_gen.v:48: Net o_valid connected to instance mult_units[0].with_valid.my_mult_switch is declared as reg data type but is not driven by an always block. (VER-1004)
+Warning:  /hpc/home/connect.wzhong679/code/Simulator_sample/SIGMA/vmod/mult_gen.v:48: Net o_data_bus connected to instance mult_units[0].with_valid.my_mult_switch is declared as reg data type but is not driven by an always block. (VER-1004)
+Warning:  /hpc/home/connect.wzhong679/code/Simulator_sample/SIGMA/vmod/mult_gen.v:58: Net o_data_bus connected to instance mult_units[1].without_valid.my_mult_switch is declared as reg data type but is not driven by an always block. (VER-1004)
+Warning:  /hpc/home/connect.wzhong679/code/Simulator_sample/SIGMA/vmod/mult_gen.v:58: Net o_data_bus connected to instance mult_units[2].without_valid.my_mult_switch is declared as reg data type but is not driven by an always block. (VER-1004)
+Warning:  /hpc/home/connect.wzhong679/code/Simulator_sample/SIGMA/vmod/mult_gen.v:58: Net o_data_bus connected to instance mult_units[3].without_valid.my_mult_switch is declared as reg data type but is not driven by an always block. (VER-1004)
+Warning:  /hpc/home/connect.wzhong679/code/Simulator_sample/SIGMA/vmod/mult_gen.v:58: Net o_data_bus connected to instance mult_units[4].without_valid.my_mult_switch is declared as reg data type but is not driven by an always block. (VER-1004)
+Warning:  /hpc/home/connect.wzhong679/code/Simulator_sample/SIGMA/vmod/mult_gen.v:58: Net o_data_bus connected to instance mult_units[5].without_valid.my_mult_switch is declared as reg data type but is not driven by an always block. (VER-1004)
+Warning:  /hpc/home/connect.wzhong679/code/Simulator_sample/SIGMA/vmod/mult_gen.v:58: Net o_data_bus connected to instance mult_units[6].without_valid.my_mult_switch is declared as reg data type but is not driven by an always block. (VER-1004)
+Warning:  /hpc/home/connect.wzhong679/code/Simulator_sample/SIGMA/vmod/mult_gen.v:58: Net o_data_bus connected to instance mult_units[7].without_valid.my_mult_switch is declared as reg data type but is not driven by an always block. (VER-1004)
+Warning:  /hpc/home/connect.wzhong679/code/Simulator_sample/SIGMA/vmod/mult_gen.v:58: Net o_data_bus connected to instance mult_units[8].without_valid.my_mult_switch is declared as reg data type but is not driven by an always block. (VER-1004)
+Warning:  /hpc/home/connect.wzhong679/code/Simulator_sample/SIGMA/vmod/mult_gen.v:58: Net o_data_bus connected to instance mult_units[9].without_valid.my_mult_switch is declared as reg data type but is not driven by an always block. (VER-1004)
+Warning:  /hpc/home/connect.wzhong679/code/Simulator_sample/SIGMA/vmod/mult_gen.v:58: Net o_data_bus connected to instance mult_units[10].without_valid.my_mult_switch is declared as reg data type but is not driven by an always block. (VER-1004)
+Warning:  /hpc/home/connect.wzhong679/code/Simulator_sample/SIGMA/vmod/mult_gen.v:58: Net o_data_bus connected to instance mult_units[11].without_valid.my_mult_switch is declared as reg data type but is not driven by an always block. (VER-1004)
+Warning:  /hpc/home/connect.wzhong679/code/Simulator_sample/SIGMA/vmod/mult_gen.v:58: Net o_data_bus connected to instance mult_units[12].without_valid.my_mult_switch is declared as reg data type but is not driven by an always block. (VER-1004)
+Warning:  /hpc/home/connect.wzhong679/code/Simulator_sample/SIGMA/vmod/mult_gen.v:58: Net o_data_bus connected to instance mult_units[13].without_valid.my_mult_switch is declared as reg data type but is not driven by an always block. (VER-1004)
+Warning:  /hpc/home/connect.wzhong679/code/Simulator_sample/SIGMA/vmod/mult_gen.v:58: Net o_data_bus connected to instance mult_units[14].without_valid.my_mult_switch is declared as reg data type but is not driven by an always block. (VER-1004)
+Warning:  /hpc/home/connect.wzhong679/code/Simulator_sample/SIGMA/vmod/mult_gen.v:58: Net o_data_bus connected to instance mult_units[15].without_valid.my_mult_switch is declared as reg data type but is not driven by an always block. (VER-1004)
+
+Inferred memory devices in process
+	in routine mult_gen_IN_DATA_TYPE8_OUT_DATA_TYPE24_NUM_PES16 line 36 in file
+		'/hpc/home/connect.wzhong679/code/Simulator_sample/SIGMA/vmod/mult_gen.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     r_valid_reg     | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|  r_stationary_reg   | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (mult_gen_IN_DATA_TYPE8_OUT_DATA_TYPE24_NUM_PES16)
+Information: Building the design 'fan_network' instantiated from design 'flexdpe' with
+	the parameters "DATA_TYPE=24,NUM_PES=16,LOG2_PES=4". (HDL-193)
+
+Inferred memory devices in process
+	in routine fan_network_DATA_TYPE24_NUM_PES16_LOG2_PES4 line 68 in file
+		'/hpc/home/connect.wzhong679/code/Simulator_sample/SIGMA/vmod/fan_network.v'.
+===================================================================================
+|      Register Name      |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===================================================================================
+| r_fan_ff_lvl_1_to_3_reg | Flip-flop |  48   |  Y  | N  | N  | N  | N  | N  | N  |
+| r_fan_ff_lvl_0_to_2_reg | Flip-flop |  144  |  Y  | N  | N  | N  | N  | N  | N  |
+| r_fan_ff_lvl_0_to_3_reg | Flip-flop |  48   |  Y  | N  | N  | N  | N  | N  | N  |
+===================================================================================
+
+Inferred memory devices in process
+	in routine fan_network_DATA_TYPE24_NUM_PES16_LOG2_PES4 line 89 in file
+		'/hpc/home/connect.wzhong679/code/Simulator_sample/SIGMA/vmod/fan_network.v'.
+=====================================================================================
+|       Register Name       |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+=====================================================================================
+|    r_lvl_output_ff_reg    | Flip-flop |  384  |  Y  | N  | N  | N  | N  | N  | N  |
+| r_lvl_output_ff_valid_reg | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+=====================================================================================
+
+Inferred memory devices in process
+	in routine fan_network_DATA_TYPE24_NUM_PES16_LOG2_PES4 line 234 in file
+		'/hpc/home/connect.wzhong679/code/Simulator_sample/SIGMA/vmod/fan_network.v'.
+=====================================================================================
+|       Register Name       |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+=====================================================================================
+|    r_lvl_output_ff_reg    | Flip-flop |  384  |  Y  | N  | N  | N  | N  | N  | N  |
+| r_lvl_output_ff_valid_reg | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+=====================================================================================
+
+Inferred memory devices in process
+	in routine fan_network_DATA_TYPE24_NUM_PES16_LOG2_PES4 line 347 in file
+		'/hpc/home/connect.wzhong679/code/Simulator_sample/SIGMA/vmod/fan_network.v'.
+=====================================================================================
+|       Register Name       |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+=====================================================================================
+|    r_lvl_output_ff_reg    | Flip-flop |  384  |  Y  | N  | N  | N  | N  | N  | N  |
+| r_lvl_output_ff_valid_reg | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+=====================================================================================
+
+Inferred memory devices in process
+	in routine fan_network_DATA_TYPE24_NUM_PES16_LOG2_PES4 line 440 in file
+		'/hpc/home/connect.wzhong679/code/Simulator_sample/SIGMA/vmod/fan_network.v'.
+=====================================================================================
+|       Register Name       |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+=====================================================================================
+|    r_lvl_output_ff_reg    | Flip-flop |  384  |  Y  | N  | N  | N  | N  | N  | N  |
+| r_lvl_output_ff_valid_reg | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+=====================================================================================
+
+Inferred memory devices in process
+	in routine fan_network_DATA_TYPE24_NUM_PES16_LOG2_PES4 line 535 in file
+		'/hpc/home/connect.wzhong679/code/Simulator_sample/SIGMA/vmod/fan_network.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     r_valid_reg     | Flip-flop |   5   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine fan_network_DATA_TYPE24_NUM_PES16_LOG2_PES4 line 789 in file
+		'/hpc/home/connect.wzhong679/code/Simulator_sample/SIGMA/vmod/fan_network.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|  r_final_add2_reg   | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|   r_final_sum_reg   | Flip-flop |  24   |  Y  | N  | N  | N  | N  | N  | N  |
+|   r_final_add_reg   | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (fan_network_DATA_TYPE24_NUM_PES16_LOG2_PES4)
+Information: Building the design 'mux' instantiated from design 'xbar_DATA_TYPE8_NUM_PES16_INPUT_BW16_LOG2_PES4' with
+	the parameters "DATA_TYPE=8,INPUT_BW=16,SEL_SIZE=4". (HDL-193)
+Presto compilation completed successfully. (mux_DATA_TYPE8_INPUT_BW16_SEL_SIZE4)
+Information: Building the design 'mult_switch'. (HDL-193)
+
+Inferred memory devices in process
+	in routine mult_switch line 37 in file
+		'/hpc/home/connect.wzhong679/code/Simulator_sample/SIGMA/vmod/mult_switch.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+| r_buffer_valid_reg  | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|    r_buffer_reg     | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine mult_switch line 53 in file
+		'/hpc/home/connect.wzhong679/code/Simulator_sample/SIGMA/vmod/mult_switch.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     o_valid_reg     | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (mult_switch)
+Information: Building the design 'edge_adder_switch' instantiated from design 'fan_network_DATA_TYPE24_NUM_PES16_LOG2_PES4' with
+	the parameters "DATA_TYPE=24,NUM_IN=2,SEL_IN=2". (HDL-193)
+
+Statistics for case statements in always block at line 87 in file
+	'/hpc/home/connect.wzhong679/code/Simulator_sample/SIGMA/vmod/edge_adder_switch.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            94            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine edge_adder_switch_DATA_TYPE24_NUM_IN2_SEL_IN2 line 70 in file
+		'/hpc/home/connect.wzhong679/code/Simulator_sample/SIGMA/vmod/edge_adder_switch.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     r_valid_reg     | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine edge_adder_switch_DATA_TYPE24_NUM_IN2_SEL_IN2 line 87 in file
+		'/hpc/home/connect.wzhong679/code/Simulator_sample/SIGMA/vmod/edge_adder_switch.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   r_vn_valid_reg    | Flip-flop |   2   |  Y  | N  | N  | N  | N  | N  | N  |
+|     r_adder_reg     | Flip-flop |  24   |  Y  | N  | N  | N  | N  | N  | N  |
+|      r_vn_reg       | Flip-flop |  48   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine edge_adder_switch_DATA_TYPE24_NUM_IN2_SEL_IN2 line 134 in file
+		'/hpc/home/connect.wzhong679/code/Simulator_sample/SIGMA/vmod/edge_adder_switch.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    r_add_en_reg     | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (edge_adder_switch_DATA_TYPE24_NUM_IN2_SEL_IN2)
+Information: Building the design 'adder_switch' instantiated from design 'fan_network_DATA_TYPE24_NUM_PES16_LOG2_PES4' with
+	the parameters "DATA_TYPE=24,NUM_IN=2,SEL_IN=2". (HDL-193)
+
+Statistics for case statements in always block at line 80 in file
+	'/hpc/home/connect.wzhong679/code/Simulator_sample/SIGMA/vmod/adder_switch.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            87            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine adder_switch_DATA_TYPE24_NUM_IN2_SEL_IN2 line 80 in file
+		'/hpc/home/connect.wzhong679/code/Simulator_sample/SIGMA/vmod/adder_switch.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   r_vn_valid_reg    | Flip-flop |   2   |  Y  | N  | N  | N  | N  | N  | N  |
+|     r_adder_reg     | Flip-flop |  48   |  Y  | N  | N  | N  | N  | N  | N  |
+|      r_vn_reg       | Flip-flop |  48   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine adder_switch_DATA_TYPE24_NUM_IN2_SEL_IN2 line 128 in file
+		'/hpc/home/connect.wzhong679/code/Simulator_sample/SIGMA/vmod/adder_switch.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    r_add_en_reg     | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (adder_switch_DATA_TYPE24_NUM_IN2_SEL_IN2)
+Information: Building the design 'edge_adder_switch' instantiated from design 'fan_network_DATA_TYPE24_NUM_PES16_LOG2_PES4' with
+	the parameters "DATA_TYPE=24,NUM_IN=4,SEL_IN=2". (HDL-193)
+
+Statistics for case statements in always block at line 87 in file
+	'/hpc/home/connect.wzhong679/code/Simulator_sample/SIGMA/vmod/edge_adder_switch.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            94            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine edge_adder_switch_DATA_TYPE24_NUM_IN4_SEL_IN2 line 70 in file
+		'/hpc/home/connect.wzhong679/code/Simulator_sample/SIGMA/vmod/edge_adder_switch.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     r_valid_reg     | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine edge_adder_switch_DATA_TYPE24_NUM_IN4_SEL_IN2 line 87 in file
+		'/hpc/home/connect.wzhong679/code/Simulator_sample/SIGMA/vmod/edge_adder_switch.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   r_vn_valid_reg    | Flip-flop |   2   |  Y  | N  | N  | N  | N  | N  | N  |
+|     r_adder_reg     | Flip-flop |  24   |  Y  | N  | N  | N  | N  | N  | N  |
+|      r_vn_reg       | Flip-flop |  48   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine edge_adder_switch_DATA_TYPE24_NUM_IN4_SEL_IN2 line 134 in file
+		'/hpc/home/connect.wzhong679/code/Simulator_sample/SIGMA/vmod/edge_adder_switch.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    r_add_en_reg     | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (edge_adder_switch_DATA_TYPE24_NUM_IN4_SEL_IN2)
+Information: Building the design 'edge_adder_switch' instantiated from design 'fan_network_DATA_TYPE24_NUM_PES16_LOG2_PES4' with
+	the parameters "DATA_TYPE=24,NUM_IN=6,SEL_IN=4". (HDL-193)
+
+Statistics for case statements in always block at line 87 in file
+	'/hpc/home/connect.wzhong679/code/Simulator_sample/SIGMA/vmod/edge_adder_switch.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            94            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine edge_adder_switch_DATA_TYPE24_NUM_IN6_SEL_IN4 line 70 in file
+		'/hpc/home/connect.wzhong679/code/Simulator_sample/SIGMA/vmod/edge_adder_switch.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     r_valid_reg     | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine edge_adder_switch_DATA_TYPE24_NUM_IN6_SEL_IN4 line 87 in file
+		'/hpc/home/connect.wzhong679/code/Simulator_sample/SIGMA/vmod/edge_adder_switch.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   r_vn_valid_reg    | Flip-flop |   2   |  Y  | N  | N  | N  | N  | N  | N  |
+|     r_adder_reg     | Flip-flop |  24   |  Y  | N  | N  | N  | N  | N  | N  |
+|      r_vn_reg       | Flip-flop |  48   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine edge_adder_switch_DATA_TYPE24_NUM_IN6_SEL_IN4 line 134 in file
+		'/hpc/home/connect.wzhong679/code/Simulator_sample/SIGMA/vmod/edge_adder_switch.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    r_add_en_reg     | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (edge_adder_switch_DATA_TYPE24_NUM_IN6_SEL_IN4)
+Information: Building the design 'reduction_mux' instantiated from design 'edge_adder_switch_DATA_TYPE24_NUM_IN2_SEL_IN2' with
+	the parameters "W=24,NUM_IN=2,SEL_IN=2,NUM_OUT=2". (HDL-193)
+Warning:  /hpc/home/connect.wzhong679/code/Simulator_sample/SIGMA/vmod/reduction_mux.v:45: signed to unsigned conversion occurs. (VER-318)
+Warning:  /hpc/home/connect.wzhong679/code/Simulator_sample/SIGMA/vmod/reduction_mux.v:55: signed to unsigned conversion occurs. (VER-318)
+Presto compilation completed successfully. (reduction_mux_W24_NUM_IN2_SEL_IN2_NUM_OUT2)
+Information: Building the design 'reduction_mux' instantiated from design 'edge_adder_switch_DATA_TYPE24_NUM_IN4_SEL_IN2' with
+	the parameters "W=24,NUM_IN=4,SEL_IN=2,NUM_OUT=2". (HDL-193)
+Warning:  /hpc/home/connect.wzhong679/code/Simulator_sample/SIGMA/vmod/reduction_mux.v:45: signed to unsigned conversion occurs. (VER-318)
+Warning:  /hpc/home/connect.wzhong679/code/Simulator_sample/SIGMA/vmod/reduction_mux.v:55: signed to unsigned conversion occurs. (VER-318)
+Presto compilation completed successfully. (reduction_mux_W24_NUM_IN4_SEL_IN2_NUM_OUT2)
+Information: Building the design 'reduction_mux' instantiated from design 'edge_adder_switch_DATA_TYPE24_NUM_IN6_SEL_IN4' with
+	the parameters "W=24,NUM_IN=6,SEL_IN=4,NUM_OUT=2". (HDL-193)
+Warning:  /hpc/home/connect.wzhong679/code/Simulator_sample/SIGMA/vmod/reduction_mux.v:45: signed to unsigned conversion occurs. (VER-318)
+Warning:  /hpc/home/connect.wzhong679/code/Simulator_sample/SIGMA/vmod/reduction_mux.v:55: signed to unsigned conversion occurs. (VER-318)
+Presto compilation completed successfully. (reduction_mux_W24_NUM_IN6_SEL_IN4_NUM_OUT2)
+Autoread command completed successfully.
+dc_shell> dc_shell> dc_shell> 1
+dc_shell> dc_shell> dc_shell> CPU Load: 17%, Ram Free: 5 GB, Swap Free: 0 GB, Work Disk Free: 1062549 GB, Tmp Disk Free: 402 GB
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | V-2023.12-DWBB_202312.0 |     *     |
+| Licensed DW Building Blocks        |                         |           |
+============================================================================
+
+====================================================================================================
+| Flow Information                                                                                 |
+----------------------------------------------------------------------------------------------------
+| Flow         | Design Compiler                                                                   |
+====================================================================================================
+| Design Information                                      | Value                                  |
+====================================================================================================
+| Number of Scenarios                                     | 0                                      |
+| Leaf Cell Count                                         | 6885                                   |
+| Number of User Hierarchies                              | 66                                     |
+| Sequential Cell Count                                   | 4205                                   |
+| Macro Count                                             | 0                                      |
+| Number of Power Domains                                 | 0                                      |
+| Number of Path Groups                                   | 2                                      |
+| Number of VT Class                                      | 0                                      |
+| Number of Clocks                                        | 1                                      |
+| Number of Dont Touch Cells                              | 934                                    |
+| Number of Dont Touch Nets                               | 0                                      |
+| Number of Size Only Cells                               | 0                                      |
+| Design with UPF Data                                    | false                                  |
+====================================================================================================
+
+Information: There are 77 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'reduction_mux_W24_NUM_IN2_SEL_IN2_NUM_OUT2_0'
+  Processing 'edge_adder_switch_DATA_TYPE24_NUM_IN2_SEL_IN2_0'
+  Processing 'adder_switch_DATA_TYPE24_NUM_IN2_SEL_IN2_0'
+  Processing 'reduction_mux_W24_NUM_IN4_SEL_IN2_NUM_OUT2_0'
+  Processing 'edge_adder_switch_DATA_TYPE24_NUM_IN4_SEL_IN2_0'
+  Processing 'reduction_mux_W24_NUM_IN6_SEL_IN4_NUM_OUT2'
+  Processing 'edge_adder_switch_DATA_TYPE24_NUM_IN6_SEL_IN4'
+  Processing 'fan_network_DATA_TYPE24_NUM_PES16_LOG2_PES4'
+  Processing 'mult_switch_0'
+  Processing 'mult_gen_IN_DATA_TYPE8_OUT_DATA_TYPE24_NUM_PES16'
+  Processing 'mux_DATA_TYPE8_INPUT_BW16_SEL_SIZE4_0'
+  Processing 'xbar_DATA_TYPE8_NUM_PES16_INPUT_BW16_LOG2_PES4'
+  Processing 'fan_ctrl_DATA_TYPE8_NUM_PES16_LOG2_PES4'
+Information: The register 'r_cmd_lvl_0_reg[22]' is a constant and will be removed. (OPT-1206)
+Information: The register 'o_reduction_cmd_reg[22]' is a constant and will be removed. (OPT-1206)
+  Processing 'flexdpe'
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+
+  Beginning Implementation Selection
+  ----------------------------------
+  Processing 'edge_adder_switch_DATA_TYPE24_NUM_IN2_SEL_IN2_1_DW01_add_0'
+  Processing 'edge_adder_switch_DATA_TYPE24_NUM_IN2_SEL_IN2_2_DW01_add_0_DW01_add_1'
+  Processing 'adder_switch_DATA_TYPE24_NUM_IN2_SEL_IN2_1_DW01_add_0_DW01_add_2'
+  Processing 'edge_adder_switch_DATA_TYPE24_NUM_IN4_SEL_IN2_1_DW01_add_0_DW01_add_3'
+  Processing 'adder_switch_DATA_TYPE24_NUM_IN2_SEL_IN2_2_DW01_add_0_DW01_add_4'
+  Processing 'adder_switch_DATA_TYPE24_NUM_IN2_SEL_IN2_3_DW01_add_0_DW01_add_5'
+  Processing 'adder_switch_DATA_TYPE24_NUM_IN2_SEL_IN2_4_DW01_add_0_DW01_add_6'
+  Processing 'edge_adder_switch_DATA_TYPE24_NUM_IN6_SEL_IN4_DW01_add_0_DW01_add_7'
+  Processing 'adder_switch_DATA_TYPE24_NUM_IN2_SEL_IN2_5_DW01_add_0_DW01_add_8'
+  Processing 'adder_switch_DATA_TYPE24_NUM_IN2_SEL_IN2_6_DW01_add_0_DW01_add_9'
+  Processing 'adder_switch_DATA_TYPE24_NUM_IN2_SEL_IN2_7_DW01_add_0_DW01_add_10'
+  Processing 'edge_adder_switch_DATA_TYPE24_NUM_IN4_SEL_IN2_0_DW01_add_0_DW01_add_11'
+  Processing 'adder_switch_DATA_TYPE24_NUM_IN2_SEL_IN2_0_DW01_add_0_DW01_add_12'
+  Processing 'edge_adder_switch_DATA_TYPE24_NUM_IN2_SEL_IN2_3_DW01_add_0_DW01_add_13'
+  Processing 'edge_adder_switch_DATA_TYPE24_NUM_IN2_SEL_IN2_0_DW01_add_0_DW01_add_14'
+  Allocating blocks in 'DW02_mult_A_width8_B_width8'
+  Building model 'DW01_MUX'
+  Processing 'DW01_MUX'
+  Building model 'DW01_mmux_width2'
+  Processing 'DW01_mmux_width2'
+  Building model 'DW01_mmux_width3'
+  Processing 'DW01_mmux_width3'
+  Building model 'DW01_mmux_width4'
+  Processing 'DW01_mmux_width4'
+  Building model 'DW01_mmux_width5'
+  Processing 'DW01_mmux_width5'
+  Building model 'DW01_NAND2'
+  Processing 'DW01_NAND2'
+  Building model 'DW01_add_width14' (cla)
+  Processing 'DW01_add_width14'
+  Building model 'DW02_mult_A_width8_B_width8' (csa)
+  Processing 'DW02_mult_A_width8_B_width8'
+  Processing 'mult_switch_0_DW02_mult_0'
+  Processing 'mult_switch_0_DW01_add_0_DW01_add_15'
+  Processing 'mult_switch_15_DW02_mult_0_DW02_mult_1'
+  Processing 'mult_switch_15_DW01_add_0_DW01_add_16'
+  Processing 'mult_switch_14_DW02_mult_0_DW02_mult_2'
+  Processing 'mult_switch_14_DW01_add_0_DW01_add_17'
+  Processing 'mult_switch_13_DW02_mult_0_DW02_mult_3'
+  Processing 'mult_switch_13_DW01_add_0_DW01_add_18'
+  Processing 'mult_switch_12_DW02_mult_0_DW02_mult_4'
+  Processing 'mult_switch_12_DW01_add_0_DW01_add_19'
+  Processing 'mult_switch_11_DW02_mult_0_DW02_mult_5'
+  Processing 'mult_switch_11_DW01_add_0_DW01_add_20'
+  Processing 'mult_switch_10_DW02_mult_0_DW02_mult_6'
+  Processing 'mult_switch_10_DW01_add_0_DW01_add_21'
+  Processing 'mult_switch_9_DW02_mult_0_DW02_mult_7'
+  Processing 'mult_switch_9_DW01_add_0_DW01_add_22'
+  Processing 'mult_switch_8_DW02_mult_0_DW02_mult_8'
+  Processing 'mult_switch_8_DW01_add_0_DW01_add_23'
+  Processing 'mult_switch_7_DW02_mult_0_DW02_mult_9'
+  Processing 'mult_switch_7_DW01_add_0_DW01_add_24'
+  Processing 'mult_switch_6_DW02_mult_0_DW02_mult_10'
+  Processing 'mult_switch_6_DW01_add_0_DW01_add_25'
+  Processing 'mult_switch_5_DW02_mult_0_DW02_mult_11'
+  Processing 'mult_switch_5_DW01_add_0_DW01_add_26'
+  Processing 'mult_switch_4_DW02_mult_0_DW02_mult_12'
+  Processing 'mult_switch_4_DW01_add_0_DW01_add_27'
+  Processing 'mult_switch_3_DW02_mult_0_DW02_mult_13'
+  Processing 'mult_switch_3_DW01_add_0_DW01_add_28'
+  Processing 'mult_switch_2_DW02_mult_0_DW02_mult_14'
+  Processing 'mult_switch_2_DW01_add_0_DW01_add_29'
+  Processing 'mult_switch_1_DW02_mult_0_DW02_mult_15'
+  Processing 'mult_switch_1_DW01_add_0_DW01_add_30'
+
+  Beginning Mapping Optimizations  (Medium effort)
+  -------------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:15   56669.2      0.00       0.0    2574.1                          
+    0:00:15   56669.2      0.00       0.0    2574.1                          
+    0:00:17   58345.0      0.00       0.0     880.2                          
+    0:00:17   58345.0      0.00       0.0     880.2                          
+    0:00:17   58345.0      0.00       0.0     880.2                          
+    0:00:17   58345.0      0.00       0.0     880.2                          
+    0:00:17   58345.0      0.00       0.0     880.2                          
+    0:00:22   37616.4      0.00       0.0       0.0                          
+    0:00:22   37553.9      0.00       0.0       0.0                          
+    0:00:24   37553.9      0.00       0.0       0.0                          
+    0:00:24   37553.9      0.00       0.0       0.0                          
+    0:00:24   37541.6      0.00       0.0       0.0                          
+    0:00:24   37541.6      0.00       0.0       0.0                          
+    0:00:24   37541.6      0.00       0.0       0.0                          
+    0:00:24   37541.6      0.00       0.0       0.0                          
+    0:00:24   37541.6      0.00       0.0       0.0                          
+
+
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:24   37541.6      0.00       0.0       0.0                          
+    0:00:24   37541.6      0.00       0.0       0.0                          
+    0:00:24   37541.6      0.00       0.0       0.0                          
+    0:00:24   37541.6      0.00       0.0       0.0                          
+    0:00:24   37541.6      0.00       0.0       0.0                          
+
+
+  Beginning Area-Recovery Phase  (cleanup)
+  -----------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:24   37541.6      0.00       0.0       0.0                          
+    0:00:24   37541.6      0.00       0.0       0.0                          
+    0:00:25   37436.8      0.00       0.0       0.0                          
+    0:00:25   37376.2      0.00       0.0       0.0                          
+    0:00:26   37352.3      0.00       0.0       0.0                          
+    0:00:26   37325.1      0.00       0.0       0.0                          
+    0:00:26   37311.8      0.00       0.0       0.0                          
+    0:00:26   37311.3      0.00       0.0       0.0                          
+    0:00:26   37310.8      0.00       0.0       0.0                          
+    0:00:26   37310.2      0.00       0.0       0.0                          
+    0:00:26   37309.7      0.00       0.0       0.0                          
+    0:00:26   37309.2      0.00       0.0       0.0                          
+    0:00:26   37309.2      0.00       0.0       0.0                          
+    0:00:26   37308.4      0.00       0.0       0.0                          
+    0:00:26   37306.2      0.00       0.0       0.0                          
+    0:00:26   37306.2      0.00       0.0       0.0                          
+    0:00:26   37306.2      0.00       0.0       0.0                          
+    0:00:26   37306.2      0.00       0.0       0.0                          
+    0:00:26   37306.2      0.00       0.0       0.0                          
+    0:00:26   37306.2      0.00       0.0       0.0                          
+    0:00:27   37306.2      0.00       0.0       0.0                          
+Loading db file '/hpc/home/connect.wzhong679/code/Tools/freepdk-45nm/stdcells.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+Warning: Design 'flexdpe' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+     Net 'my_fan_network/my_adder_11/clk': 4203 load(s), 1 driver(s)
+CPU Load: 14%, Ram Free: 5 GB, Swap Free: 0 GB, Work Disk Free: 1062497 GB, Tmp Disk Free: 402 GB
+Information: Total number of MV cells in the design.
+----------------------------------------------------------------------------------------------------
+ MV Cells                                           Total Number                                   
+----------------------------------------------------------------------------------------------------
+ Level Shifter:                                     0                                             
+ Enable Level Shifter:                              0                                             
+ Isolation Cell:                                    0                                             
+ Retention Cell:                                    0                                             
+ Retention Clamp Cell:                              0                                             
+ Switch Cell:                                       0                                             
+ Always-On Cell:                                    0                                             
+ Repeater Cell:                                     0                                             
+
+----------------------------------------------------------------------------------------------------
+Unmapped MV Cells 
+----------------------------------------------------------------------------------------------------
+0 Isolation Cells are unmapped 
+0 Retention Clamp Cells are unmapped 
+----------------------------------------------------------------------------------------------------
+1
+dc_shell> dc_shell> dc_shell> dc_shell> dc_shell> dc_shell> dc_shell> dc_shell> dc_shell> dc_shell> dc_shell> 
+Memory usage for this session 226 Mbytes.
+Memory usage for this session including child processes 226 Mbytes.
+CPU usage for this session 43 seconds ( 0.01 hours ).
+Elapsed time for this session 33 seconds ( 0.01 hours ).
+
+Thank you...

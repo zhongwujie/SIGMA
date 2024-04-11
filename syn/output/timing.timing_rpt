@@ -1,2 +1,174 @@
-Error: Current design is not defined. (UID-4)
-0
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : flexdpe
+Version: V-2023.12
+Date   : Thu Apr 11 10:57:40 2024
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: my_mult_gen/r_valid_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: my_fan_network/r_final_sum_reg[23]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  flexdpe            5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  my_mult_gen/r_valid_reg/CK (DFF_X1)                     0.00 #     0.00 r
+  my_mult_gen/r_valid_reg/Q (DFF_X1)                      0.08       0.08 r
+  my_mult_gen/U7/Z (BUF_X1)                               0.03       0.12 r
+  my_mult_gen/U5/Z (BUF_X1)                               0.16       0.28 r
+  my_mult_gen/mult_units[5].without_valid.my_mult_switch/i_valid (mult_switch_11)
+                                                          0.00       0.28 r
+  my_mult_gen/mult_units[5].without_valid.my_mult_switch/U14/ZN (NAND2_X1)
+                                                          0.15       0.43 f
+  my_mult_gen/mult_units[5].without_valid.my_mult_switch/U4/ZN (NOR2_X1)
+                                                          0.07       0.50 r
+  my_mult_gen/mult_units[5].without_valid.my_mult_switch/mult_62/A[0] (mult_switch_11_DW02_mult_0_DW02_mult_5)
+                                                          0.00       0.50 r
+  my_mult_gen/mult_units[5].without_valid.my_mult_switch/mult_62/U30/ZN (INV_X1)
+                                                          0.05       0.55 f
+  my_mult_gen/mult_units[5].without_valid.my_mult_switch/mult_62/U103/ZN (NOR2_X1)
+                                                          0.07       0.61 r
+  my_mult_gen/mult_units[5].without_valid.my_mult_switch/mult_62/U2/Z (XOR2_X1)
+                                                          0.08       0.69 r
+  my_mult_gen/mult_units[5].without_valid.my_mult_switch/mult_62/S2_2_5/S (FA_X1)
+                                                          0.12       0.81 f
+  my_mult_gen/mult_units[5].without_valid.my_mult_switch/mult_62/S2_3_4/S (FA_X1)
+                                                          0.13       0.94 r
+  my_mult_gen/mult_units[5].without_valid.my_mult_switch/mult_62/S2_4_3/S (FA_X1)
+                                                          0.11       1.05 f
+  my_mult_gen/mult_units[5].without_valid.my_mult_switch/mult_62/S2_5_2/S (FA_X1)
+                                                          0.13       1.19 r
+  my_mult_gen/mult_units[5].without_valid.my_mult_switch/mult_62/S2_6_1/S (FA_X1)
+                                                          0.11       1.30 f
+  my_mult_gen/mult_units[5].without_valid.my_mult_switch/mult_62/S4_0/S (FA_X1)
+                                                          0.13       1.43 f
+  my_mult_gen/mult_units[5].without_valid.my_mult_switch/mult_62/FS_1/A[5] (mult_switch_11_DW01_add_0_DW01_add_20)
+                                                          0.00       1.43 f
+  my_mult_gen/mult_units[5].without_valid.my_mult_switch/mult_62/FS_1/SUM[5] (mult_switch_11_DW01_add_0_DW01_add_20)
+                                                          0.00       1.43 f
+  my_mult_gen/mult_units[5].without_valid.my_mult_switch/mult_62/PRODUCT[7] (mult_switch_11_DW02_mult_0_DW02_mult_5)
+                                                          0.00       1.43 f
+  my_mult_gen/mult_units[5].without_valid.my_mult_switch/o_data[7] (mult_switch_11)
+                                                          0.00       1.43 f
+  my_mult_gen/o_data_bus[127] (mult_gen_IN_DATA_TYPE8_OUT_DATA_TYPE24_NUM_PES16)
+                                                          0.00       1.43 f
+  my_fan_network/i_data_bus[127] (fan_network_DATA_TYPE24_NUM_PES16_LOG2_PES4)
+                                                          0.00       1.43 f
+  my_fan_network/my_adder_4/i_data_bus[31] (adder_switch_DATA_TYPE24_NUM_IN2_SEL_IN2_7)
+                                                          0.00       1.43 f
+  my_fan_network/my_adder_4/my_reduction_mux/i_data[31] (reduction_mux_W24_NUM_IN2_SEL_IN2_NUM_OUT2_9)
+                                                          0.00       1.43 f
+  my_fan_network/my_adder_4/my_reduction_mux/o_data[31] (reduction_mux_W24_NUM_IN2_SEL_IN2_NUM_OUT2_9)
+                                                          0.00       1.43 f
+  my_fan_network/my_adder_4/add_155/B[7] (adder_switch_DATA_TYPE24_NUM_IN2_SEL_IN2_7_DW01_add_0_DW01_add_10)
+                                                          0.00       1.43 f
+  my_fan_network/my_adder_4/add_155/U1_7/S (FA_X1)        0.16       1.58 r
+  my_fan_network/my_adder_4/add_155/SUM[7] (adder_switch_DATA_TYPE24_NUM_IN2_SEL_IN2_7_DW01_add_0_DW01_add_10)
+                                                          0.00       1.58 r
+  my_fan_network/my_adder_4/U28/ZN (INV_X1)               0.02       1.61 f
+  my_fan_network/my_adder_4/U90/ZN (OAI22_X1)             0.09       1.69 r
+  my_fan_network/my_adder_4/o_adder[31] (adder_switch_DATA_TYPE24_NUM_IN2_SEL_IN2_7)
+                                                          0.00       1.69 r
+  my_fan_network/my_adder_5/i_data_bus[7] (adder_switch_DATA_TYPE24_NUM_IN2_SEL_IN2_6)
+                                                          0.00       1.69 r
+  my_fan_network/my_adder_5/my_reduction_mux/i_data[7] (reduction_mux_W24_NUM_IN2_SEL_IN2_NUM_OUT2_8)
+                                                          0.00       1.69 r
+  my_fan_network/my_adder_5/my_reduction_mux/o_data[7] (reduction_mux_W24_NUM_IN2_SEL_IN2_NUM_OUT2_8)
+                                                          0.00       1.69 r
+  my_fan_network/my_adder_5/add_155/A[7] (adder_switch_DATA_TYPE24_NUM_IN2_SEL_IN2_6_DW01_add_0_DW01_add_9)
+                                                          0.00       1.69 r
+  my_fan_network/my_adder_5/add_155/U1_7/S (FA_X1)        0.14       1.83 f
+  my_fan_network/my_adder_5/add_155/SUM[7] (adder_switch_DATA_TYPE24_NUM_IN2_SEL_IN2_6_DW01_add_0_DW01_add_9)
+                                                          0.00       1.83 f
+  my_fan_network/my_adder_5/U39/ZN (INV_X1)               0.03       1.87 r
+  my_fan_network/my_adder_5/U97/ZN (OAI22_X1)             0.04       1.90 f
+  my_fan_network/my_adder_5/o_adder[7] (adder_switch_DATA_TYPE24_NUM_IN2_SEL_IN2_6)
+                                                          0.00       1.90 f
+  my_fan_network/my_adder_3/i_data_bus[79] (edge_adder_switch_DATA_TYPE24_NUM_IN4_SEL_IN2_0)
+                                                          0.00       1.90 f
+  my_fan_network/my_adder_3/my_reduction_mux/i_data[79] (reduction_mux_W24_NUM_IN4_SEL_IN2_NUM_OUT2_0)
+                                                          0.00       1.90 f
+  my_fan_network/my_adder_3/my_reduction_mux/U58/ZN (AOI22_X1)
+                                                          0.06       1.97 r
+  my_fan_network/my_adder_3/my_reduction_mux/U57/ZN (INV_X1)
+                                                          0.03       2.00 f
+  my_fan_network/my_adder_3/my_reduction_mux/o_data[31] (reduction_mux_W24_NUM_IN4_SEL_IN2_NUM_OUT2_0)
+                                                          0.00       2.00 f
+  my_fan_network/my_adder_3/add_161/B[7] (edge_adder_switch_DATA_TYPE24_NUM_IN4_SEL_IN2_0_DW01_add_0_DW01_add_11)
+                                                          0.00       2.00 f
+  my_fan_network/my_adder_3/add_161/U1_7/CO (FA_X1)       0.11       2.11 f
+  my_fan_network/my_adder_3/add_161/U1_8/CO (FA_X1)       0.09       2.20 f
+  my_fan_network/my_adder_3/add_161/U1_9/CO (FA_X1)       0.09       2.29 f
+  my_fan_network/my_adder_3/add_161/U1_10/CO (FA_X1)      0.09       2.38 f
+  my_fan_network/my_adder_3/add_161/U1_11/CO (FA_X1)      0.09       2.47 f
+  my_fan_network/my_adder_3/add_161/U1_12/CO (FA_X1)      0.09       2.56 f
+  my_fan_network/my_adder_3/add_161/U1_13/CO (FA_X1)      0.09       2.65 f
+  my_fan_network/my_adder_3/add_161/U1_14/CO (FA_X1)      0.09       2.74 f
+  my_fan_network/my_adder_3/add_161/U1_15/CO (FA_X1)      0.09       2.84 f
+  my_fan_network/my_adder_3/add_161/U1_16/CO (FA_X1)      0.09       2.93 f
+  my_fan_network/my_adder_3/add_161/U1_17/CO (FA_X1)      0.09       3.02 f
+  my_fan_network/my_adder_3/add_161/U1_18/CO (FA_X1)      0.09       3.11 f
+  my_fan_network/my_adder_3/add_161/U1_19/CO (FA_X1)      0.09       3.20 f
+  my_fan_network/my_adder_3/add_161/U1_20/CO (FA_X1)      0.09       3.29 f
+  my_fan_network/my_adder_3/add_161/U1_21/CO (FA_X1)      0.09       3.38 f
+  my_fan_network/my_adder_3/add_161/U1_22/CO (FA_X1)      0.09       3.47 f
+  my_fan_network/my_adder_3/add_161/U1_23/S (FA_X1)       0.11       3.58 f
+  my_fan_network/my_adder_3/add_161/SUM[23] (edge_adder_switch_DATA_TYPE24_NUM_IN4_SEL_IN2_0_DW01_add_0_DW01_add_11)
+                                                          0.00       3.58 f
+  my_fan_network/my_adder_3/U50/ZN (AOI22_X1)             0.06       3.63 r
+  my_fan_network/my_adder_3/U49/ZN (INV_X1)               0.03       3.66 f
+  my_fan_network/my_adder_3/o_adder[23] (edge_adder_switch_DATA_TYPE24_NUM_IN4_SEL_IN2_0)
+                                                          0.00       3.66 f
+  my_fan_network/my_adder_7/i_data_bus[23] (edge_adder_switch_DATA_TYPE24_NUM_IN6_SEL_IN4)
+                                                          0.00       3.66 f
+  my_fan_network/my_adder_7/my_reduction_mux/i_data[23] (reduction_mux_W24_NUM_IN6_SEL_IN4_NUM_OUT2)
+                                                          0.00       3.66 f
+  my_fan_network/my_adder_7/my_reduction_mux/U16/ZN (AOI222_X1)
+                                                          0.09       3.75 r
+  my_fan_network/my_adder_7/my_reduction_mux/U15/ZN (INV_X1)
+                                                          0.04       3.79 f
+  my_fan_network/my_adder_7/my_reduction_mux/o_data[23] (reduction_mux_W24_NUM_IN6_SEL_IN4_NUM_OUT2)
+                                                          0.00       3.79 f
+  my_fan_network/my_adder_7/add_161/A[23] (edge_adder_switch_DATA_TYPE24_NUM_IN6_SEL_IN4_DW01_add_0_DW01_add_7)
+                                                          0.00       3.79 f
+  my_fan_network/my_adder_7/add_161/U1_23/S (FA_X1)       0.13       3.92 f
+  my_fan_network/my_adder_7/add_161/SUM[23] (edge_adder_switch_DATA_TYPE24_NUM_IN6_SEL_IN4_DW01_add_0_DW01_add_7)
+                                                          0.00       3.92 f
+  my_fan_network/my_adder_7/U50/ZN (AOI22_X1)             0.06       3.98 r
+  my_fan_network/my_adder_7/U49/ZN (INV_X1)               0.02       4.00 f
+  my_fan_network/my_adder_7/o_adder[23] (edge_adder_switch_DATA_TYPE24_NUM_IN6_SEL_IN4)
+                                                          0.00       4.00 f
+  my_fan_network/U251/ZN (AND2_X1)                        0.03       4.03 f
+  my_fan_network/r_final_sum_reg[23]/D (DFF_X1)           0.01       4.04 f
+  data arrival time                                                  4.04
+
+  clock clk (rise edge)                                   5.00       5.00
+  clock network delay (ideal)                             0.00       5.00
+  my_fan_network/r_final_sum_reg[23]/CK (DFF_X1)          0.00       5.00 r
+  library setup time                                     -0.04       4.96
+  data required time                                                 4.96
+  --------------------------------------------------------------------------
+  data required time                                                 4.96
+  data arrival time                                                 -4.04
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.92
+
+
+1

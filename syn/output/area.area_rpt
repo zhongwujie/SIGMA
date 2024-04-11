@@ -1,2 +1,226 @@
-Error: Current design is not defined. (UID-4)
-0
+ 
+****************************************
+Report : area
+Design : flexdpe
+Version: V-2023.12
+Date   : Thu Apr 11 10:57:39 2024
+****************************************
+
+Information: Updating design information... (UID-85)
+Warning: Design 'flexdpe' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+Library(s) Used:
+
+    NangateOpenCellLibrary (File: /hpc/home/connect.wzhong679/code/Tools/freepdk-45nm/stdcells.db)
+
+Number of ports:                        11712
+Number of nets:                         30875
+Number of cells:                        19189
+Number of combinational cells:          14646
+Number of sequential cells:              4203
+Number of macros/black boxes:               0
+Number of buf/inv:                       3040
+Number of references:                       5
+
+Combinational area:              18300.268141
+Buf/Inv area:                     1830.079994
+Noncombinational area:           19005.965311
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                 37306.233451
+Total area:                 undefined
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area            Local cell area
+                                  -------------------  ------------------------------ 
+Hierarchical cell                 Absolute    Percent  Combi-      Noncombi-   Black-
+                                  Total       Total    national    national    boxes   Design
+--------------------------------  ----------  -------  ----------  ----------  ------  ----------------------------------------------------------------------
+flexdpe                           37306.2335    100.0      0.0000   1754.5359  0.0000  flexdpe
+my_controller                      2125.3399      5.7    633.0800   1492.2599  0.0000  fan_ctrl_DATA_TYPE8_NUM_PES16_LOG2_PES4
+my_fan_network                    24402.5736     65.4   2897.5380   8460.6617  0.0000  fan_network_DATA_TYPE24_NUM_PES16_LOG2_PES4
+my_fan_network/my_adder_0           756.7700      2.0    312.5500    343.6720  0.0000  edge_adder_switch_DATA_TYPE24_NUM_IN2_SEL_IN2_0
+my_fan_network/my_adder_0/add_161   100.5480      0.3    100.5480      0.0000  0.0000  edge_adder_switch_DATA_TYPE24_NUM_IN2_SEL_IN2_0_DW01_add_0_DW01_add_14
+my_fan_network/my_adder_0/my_reduction_mux
+                                      0.0000      0.0      0.0000      0.0000  0.0000  reduction_mux_W24_NUM_IN2_SEL_IN2_NUM_OUT2_0
+my_fan_network/my_adder_1           756.7700      2.0    312.5500    343.6720  0.0000  edge_adder_switch_DATA_TYPE24_NUM_IN2_SEL_IN2_3
+my_fan_network/my_adder_1/add_161   100.5480      0.3    100.5480      0.0000  0.0000  edge_adder_switch_DATA_TYPE24_NUM_IN2_SEL_IN2_3_DW01_add_0_DW01_add_13
+my_fan_network/my_adder_1/my_reduction_mux
+                                      0.0000      0.0      0.0000      0.0000  0.0000  reduction_mux_W24_NUM_IN2_SEL_IN2_NUM_OUT2_11
+my_fan_network/my_adder_10          926.2120      2.5    377.9860    447.6780  0.0000  adder_switch_DATA_TYPE24_NUM_IN2_SEL_IN2_2
+my_fan_network/my_adder_10/add_155
+                                    100.5480      0.3    100.5480      0.0000  0.0000  adder_switch_DATA_TYPE24_NUM_IN2_SEL_IN2_2_DW01_add_0_DW01_add_4
+my_fan_network/my_adder_10/my_reduction_mux
+                                      0.0000      0.0      0.0000      0.0000  0.0000  reduction_mux_W24_NUM_IN2_SEL_IN2_NUM_OUT2_4
+my_fan_network/my_adder_11          851.9980      2.3    312.5500    343.6720  0.0000  edge_adder_switch_DATA_TYPE24_NUM_IN4_SEL_IN2_1
+my_fan_network/my_adder_11/add_161
+                                    100.5480      0.3    100.5480      0.0000  0.0000  edge_adder_switch_DATA_TYPE24_NUM_IN4_SEL_IN2_1_DW01_add_0_DW01_add_3
+my_fan_network/my_adder_11/my_reduction_mux
+                                     95.2280      0.3     95.2280      0.0000  0.0000  reduction_mux_W24_NUM_IN4_SEL_IN2_NUM_OUT2_1
+my_fan_network/my_adder_12          926.2120      2.5    377.9860    447.6780  0.0000  adder_switch_DATA_TYPE24_NUM_IN2_SEL_IN2_1
+my_fan_network/my_adder_12/add_155
+                                    100.5480      0.3    100.5480      0.0000  0.0000  adder_switch_DATA_TYPE24_NUM_IN2_SEL_IN2_1_DW01_add_0_DW01_add_2
+my_fan_network/my_adder_12/my_reduction_mux
+                                      0.0000      0.0      0.0000      0.0000  0.0000  reduction_mux_W24_NUM_IN2_SEL_IN2_NUM_OUT2_3
+my_fan_network/my_adder_13          756.7700      2.0    312.5500    343.6720  0.0000  edge_adder_switch_DATA_TYPE24_NUM_IN2_SEL_IN2_2
+my_fan_network/my_adder_13/add_161
+                                    100.5480      0.3    100.5480      0.0000  0.0000  edge_adder_switch_DATA_TYPE24_NUM_IN2_SEL_IN2_2_DW01_add_0_DW01_add_1
+my_fan_network/my_adder_13/my_reduction_mux
+                                      0.0000      0.0      0.0000      0.0000  0.0000  reduction_mux_W24_NUM_IN2_SEL_IN2_NUM_OUT2_2
+my_fan_network/my_adder_14          756.7700      2.0    312.5500    343.6720  0.0000  edge_adder_switch_DATA_TYPE24_NUM_IN2_SEL_IN2_1
+my_fan_network/my_adder_14/add_161
+                                    100.5480      0.3    100.5480      0.0000  0.0000  edge_adder_switch_DATA_TYPE24_NUM_IN2_SEL_IN2_1_DW01_add_0
+my_fan_network/my_adder_14/my_reduction_mux
+                                      0.0000      0.0      0.0000      0.0000  0.0000  reduction_mux_W24_NUM_IN2_SEL_IN2_NUM_OUT2_1
+my_fan_network/my_adder_2           926.2120      2.5    377.9860    447.6780  0.0000  adder_switch_DATA_TYPE24_NUM_IN2_SEL_IN2_0
+my_fan_network/my_adder_2/add_155   100.5480      0.3    100.5480      0.0000  0.0000  adder_switch_DATA_TYPE24_NUM_IN2_SEL_IN2_0_DW01_add_0_DW01_add_12
+my_fan_network/my_adder_2/my_reduction_mux
+                                      0.0000      0.0      0.0000      0.0000  0.0000  reduction_mux_W24_NUM_IN2_SEL_IN2_NUM_OUT2_10
+my_fan_network/my_adder_3           851.9980      2.3    312.5500    343.6720  0.0000  edge_adder_switch_DATA_TYPE24_NUM_IN4_SEL_IN2_0
+my_fan_network/my_adder_3/add_161   100.5480      0.3    100.5480      0.0000  0.0000  edge_adder_switch_DATA_TYPE24_NUM_IN4_SEL_IN2_0_DW01_add_0_DW01_add_11
+my_fan_network/my_adder_3/my_reduction_mux
+                                     95.2280      0.3     95.2280      0.0000  0.0000  reduction_mux_W24_NUM_IN4_SEL_IN2_NUM_OUT2_0
+my_fan_network/my_adder_4           926.2120      2.5    377.9860    447.6780  0.0000  adder_switch_DATA_TYPE24_NUM_IN2_SEL_IN2_7
+my_fan_network/my_adder_4/add_155   100.5480      0.3    100.5480      0.0000  0.0000  adder_switch_DATA_TYPE24_NUM_IN2_SEL_IN2_7_DW01_add_0_DW01_add_10
+my_fan_network/my_adder_4/my_reduction_mux
+                                      0.0000      0.0      0.0000      0.0000  0.0000  reduction_mux_W24_NUM_IN2_SEL_IN2_NUM_OUT2_9
+my_fan_network/my_adder_5           926.2120      2.5    377.9860    447.6780  0.0000  adder_switch_DATA_TYPE24_NUM_IN2_SEL_IN2_6
+my_fan_network/my_adder_5/add_155   100.5480      0.3    100.5480      0.0000  0.0000  adder_switch_DATA_TYPE24_NUM_IN2_SEL_IN2_6_DW01_add_0_DW01_add_9
+my_fan_network/my_adder_5/my_reduction_mux
+                                      0.0000      0.0      0.0000      0.0000  0.0000  reduction_mux_W24_NUM_IN2_SEL_IN2_NUM_OUT2_8
+my_fan_network/my_adder_6           926.2120      2.5    377.9860    447.6780  0.0000  adder_switch_DATA_TYPE24_NUM_IN2_SEL_IN2_5
+my_fan_network/my_adder_6/add_155   100.5480      0.3    100.5480      0.0000  0.0000  adder_switch_DATA_TYPE24_NUM_IN2_SEL_IN2_5_DW01_add_0_DW01_add_8
+my_fan_network/my_adder_6/my_reduction_mux
+                                      0.0000      0.0      0.0000      0.0000  0.0000  reduction_mux_W24_NUM_IN2_SEL_IN2_NUM_OUT2_7
+my_fan_network/my_adder_7           903.6020      2.4    312.5500    343.6720  0.0000  edge_adder_switch_DATA_TYPE24_NUM_IN6_SEL_IN4
+my_fan_network/my_adder_7/add_161   100.5480      0.3    100.5480      0.0000  0.0000  edge_adder_switch_DATA_TYPE24_NUM_IN6_SEL_IN4_DW01_add_0_DW01_add_7
+my_fan_network/my_adder_7/my_reduction_mux
+                                    146.8320      0.4    146.8320      0.0000  0.0000  reduction_mux_W24_NUM_IN6_SEL_IN4_NUM_OUT2
+my_fan_network/my_adder_8           926.2120      2.5    377.9860    447.6780  0.0000  adder_switch_DATA_TYPE24_NUM_IN2_SEL_IN2_4
+my_fan_network/my_adder_8/add_155   100.5480      0.3    100.5480      0.0000  0.0000  adder_switch_DATA_TYPE24_NUM_IN2_SEL_IN2_4_DW01_add_0_DW01_add_6
+my_fan_network/my_adder_8/my_reduction_mux
+                                      0.0000      0.0      0.0000      0.0000  0.0000  reduction_mux_W24_NUM_IN2_SEL_IN2_NUM_OUT2_6
+my_fan_network/my_adder_9           926.2120      2.5    377.9860    447.6780  0.0000  adder_switch_DATA_TYPE24_NUM_IN2_SEL_IN2_3
+my_fan_network/my_adder_9/add_155   100.5480      0.3    100.5480      0.0000  0.0000  adder_switch_DATA_TYPE24_NUM_IN2_SEL_IN2_3_DW01_add_0_DW01_add_5
+my_fan_network/my_adder_9/my_reduction_mux
+                                      0.0000      0.0      0.0000      0.0000  0.0000  reduction_mux_W24_NUM_IN2_SEL_IN2_NUM_OUT2_5
+my_mult_gen                        6282.9200     16.8      4.7880      9.0440  0.0000  mult_gen_IN_DATA_TYPE8_OUT_DATA_TYPE24_NUM_PES16
+my_mult_gen/mult_units[0].with_valid.my_mult_switch
+                                    391.8180      1.1     32.4520     45.2200  0.0000  mult_switch_0
+my_mult_gen/mult_units[0].with_valid.my_mult_switch/mult_62
+                                    314.1460      0.8    275.5760      0.0000  0.0000  mult_switch_0_DW02_mult_0
+my_mult_gen/mult_units[0].with_valid.my_mult_switch/mult_62/FS_1
+                                     38.5700      0.1     38.5700      0.0000  0.0000  mult_switch_0_DW01_add_0_DW01_add_15
+my_mult_gen/mult_units[10].without_valid.my_mult_switch
+                                    391.8180      1.1     32.4520     45.2200  0.0000  mult_switch_6
+my_mult_gen/mult_units[10].without_valid.my_mult_switch/mult_62
+                                    314.1460      0.8    275.5760      0.0000  0.0000  mult_switch_6_DW02_mult_0_DW02_mult_10
+my_mult_gen/mult_units[10].without_valid.my_mult_switch/mult_62/FS_1
+                                     38.5700      0.1     38.5700      0.0000  0.0000  mult_switch_6_DW01_add_0_DW01_add_25
+my_mult_gen/mult_units[11].without_valid.my_mult_switch
+                                    391.8180      1.1     32.4520     45.2200  0.0000  mult_switch_5
+my_mult_gen/mult_units[11].without_valid.my_mult_switch/mult_62
+                                    314.1460      0.8    275.5760      0.0000  0.0000  mult_switch_5_DW02_mult_0_DW02_mult_11
+my_mult_gen/mult_units[11].without_valid.my_mult_switch/mult_62/FS_1
+                                     38.5700      0.1     38.5700      0.0000  0.0000  mult_switch_5_DW01_add_0_DW01_add_26
+my_mult_gen/mult_units[12].without_valid.my_mult_switch
+                                    391.8180      1.1     32.4520     45.2200  0.0000  mult_switch_4
+my_mult_gen/mult_units[12].without_valid.my_mult_switch/mult_62
+                                    314.1460      0.8    275.5760      0.0000  0.0000  mult_switch_4_DW02_mult_0_DW02_mult_12
+my_mult_gen/mult_units[12].without_valid.my_mult_switch/mult_62/FS_1
+                                     38.5700      0.1     38.5700      0.0000  0.0000  mult_switch_4_DW01_add_0_DW01_add_27
+my_mult_gen/mult_units[13].without_valid.my_mult_switch
+                                    391.8180      1.1     32.4520     45.2200  0.0000  mult_switch_3
+my_mult_gen/mult_units[13].without_valid.my_mult_switch/mult_62
+                                    314.1460      0.8    275.5760      0.0000  0.0000  mult_switch_3_DW02_mult_0_DW02_mult_13
+my_mult_gen/mult_units[13].without_valid.my_mult_switch/mult_62/FS_1
+                                     38.5700      0.1     38.5700      0.0000  0.0000  mult_switch_3_DW01_add_0_DW01_add_28
+my_mult_gen/mult_units[14].without_valid.my_mult_switch
+                                    391.8180      1.1     32.4520     45.2200  0.0000  mult_switch_2
+my_mult_gen/mult_units[14].without_valid.my_mult_switch/mult_62
+                                    314.1460      0.8    275.5760      0.0000  0.0000  mult_switch_2_DW02_mult_0_DW02_mult_14
+my_mult_gen/mult_units[14].without_valid.my_mult_switch/mult_62/FS_1
+                                     38.5700      0.1     38.5700      0.0000  0.0000  mult_switch_2_DW01_add_0_DW01_add_29
+my_mult_gen/mult_units[15].without_valid.my_mult_switch
+                                    391.8180      1.1     32.4520     45.2200  0.0000  mult_switch_1
+my_mult_gen/mult_units[15].without_valid.my_mult_switch/mult_62
+                                    314.1460      0.8    275.5760      0.0000  0.0000  mult_switch_1_DW02_mult_0_DW02_mult_15
+my_mult_gen/mult_units[15].without_valid.my_mult_switch/mult_62/FS_1
+                                     38.5700      0.1     38.5700      0.0000  0.0000  mult_switch_1_DW01_add_0_DW01_add_30
+my_mult_gen/mult_units[1].without_valid.my_mult_switch
+                                    391.8180      1.1     32.4520     45.2200  0.0000  mult_switch_15
+my_mult_gen/mult_units[1].without_valid.my_mult_switch/mult_62
+                                    314.1460      0.8    275.5760      0.0000  0.0000  mult_switch_15_DW02_mult_0_DW02_mult_1
+my_mult_gen/mult_units[1].without_valid.my_mult_switch/mult_62/FS_1
+                                     38.5700      0.1     38.5700      0.0000  0.0000  mult_switch_15_DW01_add_0_DW01_add_16
+my_mult_gen/mult_units[2].without_valid.my_mult_switch
+                                    391.8180      1.1     32.4520     45.2200  0.0000  mult_switch_14
+my_mult_gen/mult_units[2].without_valid.my_mult_switch/mult_62
+                                    314.1460      0.8    275.5760      0.0000  0.0000  mult_switch_14_DW02_mult_0_DW02_mult_2
+my_mult_gen/mult_units[2].without_valid.my_mult_switch/mult_62/FS_1
+                                     38.5700      0.1     38.5700      0.0000  0.0000  mult_switch_14_DW01_add_0_DW01_add_17
+my_mult_gen/mult_units[3].without_valid.my_mult_switch
+                                    391.8180      1.1     32.4520     45.2200  0.0000  mult_switch_13
+my_mult_gen/mult_units[3].without_valid.my_mult_switch/mult_62
+                                    314.1460      0.8    275.5760      0.0000  0.0000  mult_switch_13_DW02_mult_0_DW02_mult_3
+my_mult_gen/mult_units[3].without_valid.my_mult_switch/mult_62/FS_1
+                                     38.5700      0.1     38.5700      0.0000  0.0000  mult_switch_13_DW01_add_0_DW01_add_18
+my_mult_gen/mult_units[4].without_valid.my_mult_switch
+                                    391.8180      1.1     32.4520     45.2200  0.0000  mult_switch_12
+my_mult_gen/mult_units[4].without_valid.my_mult_switch/mult_62
+                                    314.1460      0.8    275.5760      0.0000  0.0000  mult_switch_12_DW02_mult_0_DW02_mult_4
+my_mult_gen/mult_units[4].without_valid.my_mult_switch/mult_62/FS_1
+                                     38.5700      0.1     38.5700      0.0000  0.0000  mult_switch_12_DW01_add_0_DW01_add_19
+my_mult_gen/mult_units[5].without_valid.my_mult_switch
+                                    391.8180      1.1     32.4520     45.2200  0.0000  mult_switch_11
+my_mult_gen/mult_units[5].without_valid.my_mult_switch/mult_62
+                                    314.1460      0.8    275.5760      0.0000  0.0000  mult_switch_11_DW02_mult_0_DW02_mult_5
+my_mult_gen/mult_units[5].without_valid.my_mult_switch/mult_62/FS_1
+                                     38.5700      0.1     38.5700      0.0000  0.0000  mult_switch_11_DW01_add_0_DW01_add_20
+my_mult_gen/mult_units[6].without_valid.my_mult_switch
+                                    391.8180      1.1     32.4520     45.2200  0.0000  mult_switch_10
+my_mult_gen/mult_units[6].without_valid.my_mult_switch/mult_62
+                                    314.1460      0.8    275.5760      0.0000  0.0000  mult_switch_10_DW02_mult_0_DW02_mult_6
+my_mult_gen/mult_units[6].without_valid.my_mult_switch/mult_62/FS_1
+                                     38.5700      0.1     38.5700      0.0000  0.0000  mult_switch_10_DW01_add_0_DW01_add_21
+my_mult_gen/mult_units[7].without_valid.my_mult_switch
+                                    391.8180      1.1     32.4520     45.2200  0.0000  mult_switch_9
+my_mult_gen/mult_units[7].without_valid.my_mult_switch/mult_62
+                                    314.1460      0.8    275.5760      0.0000  0.0000  mult_switch_9_DW02_mult_0_DW02_mult_7
+my_mult_gen/mult_units[7].without_valid.my_mult_switch/mult_62/FS_1
+                                     38.5700      0.1     38.5700      0.0000  0.0000  mult_switch_9_DW01_add_0_DW01_add_22
+my_mult_gen/mult_units[8].without_valid.my_mult_switch
+                                    391.8180      1.1     32.4520     45.2200  0.0000  mult_switch_8
+my_mult_gen/mult_units[8].without_valid.my_mult_switch/mult_62
+                                    314.1460      0.8    275.5760      0.0000  0.0000  mult_switch_8_DW02_mult_0_DW02_mult_8
+my_mult_gen/mult_units[8].without_valid.my_mult_switch/mult_62/FS_1
+                                     38.5700      0.1     38.5700      0.0000  0.0000  mult_switch_8_DW01_add_0_DW01_add_23
+my_mult_gen/mult_units[9].without_valid.my_mult_switch
+                                    391.8180      1.1     32.4520     45.2200  0.0000  mult_switch_7
+my_mult_gen/mult_units[9].without_valid.my_mult_switch/mult_62
+                                    314.1460      0.8    275.5760      0.0000  0.0000  mult_switch_7_DW02_mult_0_DW02_mult_9
+my_mult_gen/mult_units[9].without_valid.my_mult_switch/mult_62/FS_1
+                                     38.5700      0.1     38.5700      0.0000  0.0000  mult_switch_7_DW01_add_0_DW01_add_24
+my_xbar                            2740.8640      7.3      0.0000    578.8160  0.0000  xbar_DATA_TYPE8_NUM_PES16_INPUT_BW16_LOG2_PES4
+my_xbar/gen_out[0].my_mux           135.1280      0.4    135.1280      0.0000  0.0000  mux_DATA_TYPE8_INPUT_BW16_SEL_SIZE4_0
+my_xbar/gen_out[10].my_mux          135.1280      0.4    135.1280      0.0000  0.0000  mux_DATA_TYPE8_INPUT_BW16_SEL_SIZE4_6
+my_xbar/gen_out[11].my_mux          135.1280      0.4    135.1280      0.0000  0.0000  mux_DATA_TYPE8_INPUT_BW16_SEL_SIZE4_5
+my_xbar/gen_out[12].my_mux          135.1280      0.4    135.1280      0.0000  0.0000  mux_DATA_TYPE8_INPUT_BW16_SEL_SIZE4_4
+my_xbar/gen_out[13].my_mux          135.1280      0.4    135.1280      0.0000  0.0000  mux_DATA_TYPE8_INPUT_BW16_SEL_SIZE4_3
+my_xbar/gen_out[14].my_mux          135.1280      0.4    135.1280      0.0000  0.0000  mux_DATA_TYPE8_INPUT_BW16_SEL_SIZE4_2
+my_xbar/gen_out[15].my_mux          135.1280      0.4    135.1280      0.0000  0.0000  mux_DATA_TYPE8_INPUT_BW16_SEL_SIZE4_1
+my_xbar/gen_out[1].my_mux           135.1280      0.4    135.1280      0.0000  0.0000  mux_DATA_TYPE8_INPUT_BW16_SEL_SIZE4_15
+my_xbar/gen_out[2].my_mux           135.1280      0.4    135.1280      0.0000  0.0000  mux_DATA_TYPE8_INPUT_BW16_SEL_SIZE4_14
+my_xbar/gen_out[3].my_mux           135.1280      0.4    135.1280      0.0000  0.0000  mux_DATA_TYPE8_INPUT_BW16_SEL_SIZE4_13
+my_xbar/gen_out[4].my_mux           135.1280      0.4    135.1280      0.0000  0.0000  mux_DATA_TYPE8_INPUT_BW16_SEL_SIZE4_12
+my_xbar/gen_out[5].my_mux           135.1280      0.4    135.1280      0.0000  0.0000  mux_DATA_TYPE8_INPUT_BW16_SEL_SIZE4_11
+my_xbar/gen_out[6].my_mux           135.1280      0.4    135.1280      0.0000  0.0000  mux_DATA_TYPE8_INPUT_BW16_SEL_SIZE4_10
+my_xbar/gen_out[7].my_mux           135.1280      0.4    135.1280      0.0000  0.0000  mux_DATA_TYPE8_INPUT_BW16_SEL_SIZE4_9
+my_xbar/gen_out[8].my_mux           135.1280      0.4    135.1280      0.0000  0.0000  mux_DATA_TYPE8_INPUT_BW16_SEL_SIZE4_8
+my_xbar/gen_out[9].my_mux           135.1280      0.4    135.1280      0.0000  0.0000  mux_DATA_TYPE8_INPUT_BW16_SEL_SIZE4_7
+--------------------------------  ----------  -------  ----------  ----------  ------  ----------------------------------------------------------------------
+Total                                                  18300.2681  19005.9653  0.0000
+
+1

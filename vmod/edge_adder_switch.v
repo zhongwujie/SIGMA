@@ -158,13 +158,7 @@ module edge_adder_switch # (
 	end
 	
 	// instantiate FP32 adder
-	adder32 my_adder (
-		.clk(clk),
-		.rst(rst),
-		.A(w_sel_data[DATA_TYPE+:DATA_TYPE]),
-		.B(w_sel_data[0+:DATA_TYPE]),
-		.O(w_O)
-	);
+  assign w_O = w_sel_data[DATA_TYPE-1:0] + w_sel_data[2*DATA_TYPE-1:DATA_TYPE];
 
 endmodule
 

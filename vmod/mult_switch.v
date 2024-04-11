@@ -21,17 +21,17 @@ module mult_switch(
 	input clk;
 	input rst;
 	input i_valid;
-	input [15:0] i_data;
+	input [7:0] i_data;
 	input i_stationary;
 
 	output reg o_valid;
-	output [31:0] o_data;
+	output [23:0] o_data;
 
-	reg [15:0] r_buffer; // buffer to hold stationary value
+	reg [7:0] r_buffer; // buffer to hold stationary value
 	reg r_buffer_valid; // valid buffer entry
 	
-	reg [15:0] w_A;
-	reg [15:0] w_B;
+	wire [7:0] w_A;
+	wire [7:0] w_B;
 	
 	// logic to store correct value into the stationary buffer
 	always @ (posedge clk) begin
@@ -59,14 +59,6 @@ module mult_switch(
 	end
 
 	// instantiate multiplier 
-	multiplier my_multiplier (
-		.clk(clk),
-		.A(w_A), // stationary value
-		.B(w_B), // streaming value
-		.O(o_data[31:16])
-	);
-	
-	// convert BF16 to FP32
-	assign o_data[15:0] = 16'h0000; 
+	assign o_data = w_A * w_B;
 
 endmodule

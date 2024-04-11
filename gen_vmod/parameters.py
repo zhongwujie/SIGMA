@@ -2,9 +2,9 @@ import math
 
 
 # RTL Generation Parameters
-IN_DATA_TYPE = 16 # FIXED
-OUT_DATA_TYPE = 32 # FIXED
-NUM_PES = 32
+IN_DATA_TYPE = 8 # FIXED
+OUT_DATA_TYPE = 24 # FIXED
+NUM_PES = 16
 LOG2_PES = int(math.log(NUM_PES, 2))
 DTOP = "xbar" # FIXED (Future work: connect Benes RTL)
 

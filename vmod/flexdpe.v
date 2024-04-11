@@ -21,10 +21,10 @@ module flexdpe(
 	o_data_bus // output data bus
 );
 
-	parameter IN_DATA_TYPE = 16; // input data type width (BFP16)
-	parameter OUT_DATA_TYPE = 32; // output data type width (FP32)
-	parameter NUM_PES = 32; // number of PES
-	parameter LOG2_PES = 5;
+	parameter IN_DATA_TYPE = 8; // input data type width (BFP16)
+	parameter OUT_DATA_TYPE = 24; // output data type width (FP32)
+	parameter NUM_PES = 16; // number of PES
+	parameter LOG2_PES = 4;
 
 	input clk;
 	input rst;
@@ -39,7 +39,7 @@ module flexdpe(
 
 	wire [(NUM_PES-1)-1:0] w_reduction_add;
 	wire [3*(NUM_PES-1)-1:0] w_reduction_cmd;
-	wire [19 : 0] w_reduction_sel;
+	wire [7 : 0] w_reduction_sel;
 	wire w_reduction_valid;
 
 	reg [NUM_PES * OUT_DATA_TYPE -1: 0] r_mult;
