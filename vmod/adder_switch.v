@@ -9,7 +9,7 @@
 /////////////////////////////////////////////////////////////////////////
 
 module adder_switch # (
-	parameter DATA_TYPE = 32,
+	parameter DATA_TYPE = 24,
 	parameter NUM_IN = 4,
 	parameter SEL_IN = 2) (
 	clk,

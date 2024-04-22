@@ -9,9 +9,9 @@
 
 
 module mult_gen # (
-	parameter IN_DATA_TYPE = 16,
-	parameter OUT_DATA_TYPE = 32,
-	parameter NUM_PES = 64) (
+	parameter IN_DATA_TYPE = 8,
+	parameter OUT_DATA_TYPE = 24,
+	parameter NUM_PES = 16) (
 	clk, 
 	rst,
 	i_valid, 

@@ -59,6 +59,7 @@ module mult_switch(
 	end
 
 	// instantiate multiplier 
-	assign o_data = w_A * w_B;
+	// assign o_data = {{8{w_A[7]}}, w_A} * {{8{w_B[7]}}, w_B};
+  assign o_data = w_A * w_B;
 
 endmodule

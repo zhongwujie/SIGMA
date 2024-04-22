@@ -1,0 +1,90 @@
+ 
+****************************************
+Report : area
+Design : fan_network
+Version: V-2023.12
+Date   : Mon Apr 22 15:00:41 2024
+****************************************
+
+Information: Updating design information... (UID-85)
+Warning: Design 'fan_network' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+Library(s) Used:
+
+    NangateOpenCellLibrary (File: /hpc/home/connect.wzhong679/code/Tools/freepdk-45nm/stdcells.db)
+
+Number of ports:                         5980
+Number of nets:                         17870
+Number of cells:                        12059
+Number of combinational cells:           8803
+Number of sequential cells:              3195
+Number of macros/black boxes:               0
+Number of buf/inv:                       2417
+Number of references:                      23
+
+Combinational area:               9961.966112
+Buf/Inv area:                     1493.323991
+Noncombinational area:           14447.789476
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                 24409.755588
+Total area:                 undefined
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area            Local cell area
+                                  -------------------  ----------------------------- 
+Hierarchical cell                 Absolute    Percent  Combi-     Noncombi-   Black-
+                                  Total       Total    national   national    boxes   Design
+--------------------------------  ----------  -------  ---------  ----------  ------  ----------------------------------------------------------------------
+fan_network                       24409.7556    100.0  2895.1440   8460.6617  0.0000  fan_network
+my_adder_0                          756.7700      3.1   312.5500    343.6720  0.0000  edge_adder_switch_DATA_TYPE24_NUM_IN2_SEL_IN2_0
+my_adder_0/add_161                  100.5480      0.4   100.5480      0.0000  0.0000  edge_adder_switch_DATA_TYPE24_NUM_IN2_SEL_IN2_0_DW01_add_0_DW01_add_14
+my_adder_0/my_reduction_mux           0.0000      0.0     0.0000      0.0000  0.0000  reduction_mux_W24_NUM_IN2_SEL_IN2_NUM_OUT2_0
+my_adder_1                          756.7700      3.1   312.5500    343.6720  0.0000  edge_adder_switch_DATA_TYPE24_NUM_IN2_SEL_IN2_3
+my_adder_1/add_161                  100.5480      0.4   100.5480      0.0000  0.0000  edge_adder_switch_DATA_TYPE24_NUM_IN2_SEL_IN2_3_DW01_add_0_DW01_add_13
+my_adder_1/my_reduction_mux           0.0000      0.0     0.0000      0.0000  0.0000  reduction_mux_W24_NUM_IN2_SEL_IN2_NUM_OUT2_11
+my_adder_10                         927.8080      3.8   379.5820    447.6780  0.0000  adder_switch_DATA_TYPE24_NUM_IN2_SEL_IN2_2
+my_adder_10/add_155                 100.5480      0.4   100.5480      0.0000  0.0000  adder_switch_DATA_TYPE24_NUM_IN2_SEL_IN2_2_DW01_add_0_DW01_add_4
+my_adder_10/my_reduction_mux          0.0000      0.0     0.0000      0.0000  0.0000  reduction_mux_W24_NUM_IN2_SEL_IN2_NUM_OUT2_4
+my_adder_11                         851.9980      3.5   312.5500    343.6720  0.0000  edge_adder_switch_DATA_TYPE24_NUM_IN4_SEL_IN2_1
+my_adder_11/add_161                 100.5480      0.4   100.5480      0.0000  0.0000  edge_adder_switch_DATA_TYPE24_NUM_IN4_SEL_IN2_1_DW01_add_0_DW01_add_3
+my_adder_11/my_reduction_mux         95.2280      0.4    95.2280      0.0000  0.0000  reduction_mux_W24_NUM_IN4_SEL_IN2_NUM_OUT2_1
+my_adder_12                         927.8080      3.8   379.5820    447.6780  0.0000  adder_switch_DATA_TYPE24_NUM_IN2_SEL_IN2_1
+my_adder_12/add_155                 100.5480      0.4   100.5480      0.0000  0.0000  adder_switch_DATA_TYPE24_NUM_IN2_SEL_IN2_1_DW01_add_0_DW01_add_2
+my_adder_12/my_reduction_mux          0.0000      0.0     0.0000      0.0000  0.0000  reduction_mux_W24_NUM_IN2_SEL_IN2_NUM_OUT2_3
+my_adder_13                         756.7700      3.1   312.5500    343.6720  0.0000  edge_adder_switch_DATA_TYPE24_NUM_IN2_SEL_IN2_2
+my_adder_13/add_161                 100.5480      0.4   100.5480      0.0000  0.0000  edge_adder_switch_DATA_TYPE24_NUM_IN2_SEL_IN2_2_DW01_add_0_DW01_add_1
+my_adder_13/my_reduction_mux          0.0000      0.0     0.0000      0.0000  0.0000  reduction_mux_W24_NUM_IN2_SEL_IN2_NUM_OUT2_2
+my_adder_14                         756.7700      3.1   312.5500    343.6720  0.0000  edge_adder_switch_DATA_TYPE24_NUM_IN2_SEL_IN2_1
+my_adder_14/add_161                 100.5480      0.4   100.5480      0.0000  0.0000  edge_adder_switch_DATA_TYPE24_NUM_IN2_SEL_IN2_1_DW01_add_0
+my_adder_14/my_reduction_mux          0.0000      0.0     0.0000      0.0000  0.0000  reduction_mux_W24_NUM_IN2_SEL_IN2_NUM_OUT2_1
+my_adder_2                          927.8080      3.8   379.5820    447.6780  0.0000  adder_switch_DATA_TYPE24_NUM_IN2_SEL_IN2_0
+my_adder_2/add_155                  100.5480      0.4   100.5480      0.0000  0.0000  adder_switch_DATA_TYPE24_NUM_IN2_SEL_IN2_0_DW01_add_0_DW01_add_12
+my_adder_2/my_reduction_mux           0.0000      0.0     0.0000      0.0000  0.0000  reduction_mux_W24_NUM_IN2_SEL_IN2_NUM_OUT2_10
+my_adder_3                          851.9980      3.5   312.5500    343.6720  0.0000  edge_adder_switch_DATA_TYPE24_NUM_IN4_SEL_IN2_0
+my_adder_3/add_161                  100.5480      0.4   100.5480      0.0000  0.0000  edge_adder_switch_DATA_TYPE24_NUM_IN4_SEL_IN2_0_DW01_add_0_DW01_add_11
+my_adder_3/my_reduction_mux          95.2280      0.4    95.2280      0.0000  0.0000  reduction_mux_W24_NUM_IN4_SEL_IN2_NUM_OUT2_0
+my_adder_4                          927.8080      3.8   379.5820    447.6780  0.0000  adder_switch_DATA_TYPE24_NUM_IN2_SEL_IN2_7
+my_adder_4/add_155                  100.5480      0.4   100.5480      0.0000  0.0000  adder_switch_DATA_TYPE24_NUM_IN2_SEL_IN2_7_DW01_add_0_DW01_add_10
+my_adder_4/my_reduction_mux           0.0000      0.0     0.0000      0.0000  0.0000  reduction_mux_W24_NUM_IN2_SEL_IN2_NUM_OUT2_9
+my_adder_5                          926.2120      3.8   377.9860    447.6780  0.0000  adder_switch_DATA_TYPE24_NUM_IN2_SEL_IN2_6
+my_adder_5/add_155                  100.5480      0.4   100.5480      0.0000  0.0000  adder_switch_DATA_TYPE24_NUM_IN2_SEL_IN2_6_DW01_add_0_DW01_add_9
+my_adder_5/my_reduction_mux           0.0000      0.0     0.0000      0.0000  0.0000  reduction_mux_W24_NUM_IN2_SEL_IN2_NUM_OUT2_8
+my_adder_6                          927.8080      3.8   379.5820    447.6780  0.0000  adder_switch_DATA_TYPE24_NUM_IN2_SEL_IN2_5
+my_adder_6/add_155                  100.5480      0.4   100.5480      0.0000  0.0000  adder_switch_DATA_TYPE24_NUM_IN2_SEL_IN2_5_DW01_add_0_DW01_add_8
+my_adder_6/my_reduction_mux           0.0000      0.0     0.0000      0.0000  0.0000  reduction_mux_W24_NUM_IN2_SEL_IN2_NUM_OUT2_7
+my_adder_7                          903.6020      3.7   312.5500    343.6720  0.0000  edge_adder_switch_DATA_TYPE24_NUM_IN6_SEL_IN4
+my_adder_7/add_161                  100.5480      0.4   100.5480      0.0000  0.0000  edge_adder_switch_DATA_TYPE24_NUM_IN6_SEL_IN4_DW01_add_0_DW01_add_7
+my_adder_7/my_reduction_mux         146.8320      0.6   146.8320      0.0000  0.0000  reduction_mux_W24_NUM_IN6_SEL_IN4_NUM_OUT2
+my_adder_8                          927.8080      3.8   379.5820    447.6780  0.0000  adder_switch_DATA_TYPE24_NUM_IN2_SEL_IN2_4
+my_adder_8/add_155                  100.5480      0.4   100.5480      0.0000  0.0000  adder_switch_DATA_TYPE24_NUM_IN2_SEL_IN2_4_DW01_add_0_DW01_add_6
+my_adder_8/my_reduction_mux           0.0000      0.0     0.0000      0.0000  0.0000  reduction_mux_W24_NUM_IN2_SEL_IN2_NUM_OUT2_6
+my_adder_9                          926.2120      3.8   377.9860    447.6780  0.0000  adder_switch_DATA_TYPE24_NUM_IN2_SEL_IN2_3
+my_adder_9/add_155                  100.5480      0.4   100.5480      0.0000  0.0000  adder_switch_DATA_TYPE24_NUM_IN2_SEL_IN2_3_DW01_add_0_DW01_add_5
+my_adder_9/my_reduction_mux           0.0000      0.0     0.0000      0.0000  0.0000  reduction_mux_W24_NUM_IN2_SEL_IN2_NUM_OUT2_5
+--------------------------------  ----------  -------  ---------  ----------  ------  ----------------------------------------------------------------------
+Total                                                  9961.9661  14447.7895  0.0000
+
+1
